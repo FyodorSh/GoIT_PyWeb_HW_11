@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "goit-pyweb-hw-11"
+version = "0.1.0"
+description = ""
+authors = ["fyodor <fyodor.shevchenko@gmail.com>"]
+readme = "README.md"
+packages = [{include = "goit_pyweb_hw_11"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.92.0"
+uvicorn = {extras = ["standart"], version = "^0.20.0"}
+sqlalchemy = "^2.0.4"
+pydantic = {extras = ["email"], version = "^1.10.6"}
+psycopg2 = "^2.9.5"
+alembic = "^1.10.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
